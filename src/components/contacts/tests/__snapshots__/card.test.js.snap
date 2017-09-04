@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<div
+  className="contact-card"
+>
+  <dl>
+    <dt
+      className="contact-card--title"
+    >
+      Name
+    </dt>
+    <dd
+      className="contact-card--value"
+    >
+      John Snow
+    </dd>
+    <dt
+      className="contact-card--title"
+    >
+      Email
+    </dt>
+    <dd
+      className="contact-card--value"
+    >
+      john@thewall.com
+    </dd>
+  </dl>
+  <button
+    className="button"
+    href="/contact/edit/john@thewall.com"
+    onClick={[Function]}
+  >
+    Edit Contact
+  </button>
+  <button
+    className="button"
+    onClick={undefined}
+  >
+    Delete Contact
+  </button>
+</div>
+`;

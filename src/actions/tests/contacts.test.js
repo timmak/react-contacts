@@ -1,5 +1,17 @@
-import { addContact, removeContact } from "./../contacts";
-import { ADD_CONTACT, REMOVE_CONTACT } from "./../../CONSTANTS";
+import {
+  addContact,
+  removeContact,
+  setContactForm,
+  setContactFormField,
+  resetContactForm
+} from "./../contacts";
+import {
+  ADD_CONTACT,
+  REMOVE_CONTACT,
+  SET_CONTACT_FORM,
+  SET_FORM_FIELD,
+  RESET_CONTACT_FORM
+} from "./../../CONSTANTS";
 
 it("should call addContact with correct type and field", () => {
   const contactToAdd = {
@@ -20,5 +32,37 @@ it("should call removeContact with correct type and field", () => {
   expect(contactAction).toEqual({
     type: REMOVE_CONTACT,
     data: contactToRemove
+  });
+});
+
+it("should call setContactFormField with correct type and field", () => {
+  const fieldToSet = {
+    field: "firstName",
+    value: "test"
+  };
+  const contactSetFormFieldAction = setContactFormField(fieldToSet);
+  expect(contactSetFormFieldAction).toEqual({
+    type: SET_FORM_FIELD,
+    data: fieldToSet
+  });
+});
+
+it("should call resetContactFrom with correct type and field", () => {
+  const contactAction = resetContactForm();
+  expect(contactAction).toEqual({
+    type: RESET_CONTACT_FORM
+  });
+});
+
+it("should call setContactFrom with data", () => {
+  const testData = {
+    firstName: "John",
+    lastName: "Snow",
+    email: "john@thewall.com"
+  };
+  const contactAction = setContactForm(testData);
+  expect(contactAction).toEqual({
+    type: SET_CONTACT_FORM,
+    data: testData
   });
 });

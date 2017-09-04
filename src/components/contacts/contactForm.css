@@ -1,0 +1,14 @@
+.contact-form--label {
+  display: block;
+  padding: 0.8em 0;
+}
+
+.contact-form--input {
+  box-sizing: border-box;
+  padding: 0.8em;
+  width: 100%;
+}
+
+.contact-form--fields {
+  margin: 1em 0;
+}

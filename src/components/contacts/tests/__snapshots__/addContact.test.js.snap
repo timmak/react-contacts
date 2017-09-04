@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<div>
+  <h1>
+    Add contact
+  </h1>
+  <form
+    onSubmit={[Function]}
+  >
+    <div
+      className="contact-form--fields"
+    >
+      <div>
+        <label
+          className="contact-form--label"
+          for="firstName"
+        >
+          First Name
+        </label>
+        <input
+          className="contact-form--input"
+          name="firstName"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label
+          className="contact-form--label"
+          for="lastName"
+        >
+          Last Name
+        </label>
+        <input
+          className="contact-form--input"
+          name="lastName"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label
+          className="contact-form--label"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          className="contact-form--input"
+          name="email"
+          onChange={[Function]}
+          type="email"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="flex"
+    >
+      <span
+        className="spacer"
+      />
+      <input
+        className="button"
+        type="submit"
+        value="Save"
+      />
+    </div>
+  </form>
+</div>
+`;

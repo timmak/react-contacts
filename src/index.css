@@ -2,4 +2,34 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  color: #2b2b2b;
+}
+
+dl {
+  margin-top: 0;
+}
+
+.flex {
+  display: flex;
+}
+.spacer {
+  flex: 1;
+}
+
+.button {
+  border: 1px solid #333;
+  background: white;
+  cursor: pointer;
+  font-size: 0.8em;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.3s;
+}
+
+.button:hover {
+  box-shadow: 1px 1px 0px #444;
+}
+.button:active {
+  box-shadow: none;
 }

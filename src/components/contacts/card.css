@@ -1,0 +1,19 @@
+.contact-card {
+  display: inline-block;
+  padding: 1em;
+  margin: 1em;
+  box-sizing: border-box;
+  min-width: 300px;
+  border: 1px solid #ccc;
+}
+
+.contact-card--value,
+.contact-card--title {
+  padding: 0;
+  margin: 0;
+}
+
+.contact-card--title {
+  font-size: 1.2em;
+  font-weight: 600;
+}
